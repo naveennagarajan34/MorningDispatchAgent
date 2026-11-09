@@ -72,3 +72,7 @@ if __name__ == "__main__":
 
     # Save to disk
     save_dispatch_to_file(briefing)
+
+    # Dispatch to Telegram
+    print("\nSending briefing to Telegram...")
+    send_telegram_message(briefing)
