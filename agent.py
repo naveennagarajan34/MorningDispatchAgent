@@ -7,6 +7,7 @@ from google import genai
 
 from news import get_top_news
 from weather import get_weather
+from notifier import send_telegram_message
 
 load_dotenv()
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
