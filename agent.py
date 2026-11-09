@@ -54,7 +54,6 @@ def save_dispatch_to_file(content):
     today_str = datetime.now().strftime("%Y-%m-%d")
     file_path = output_dir / f"dispatch_{today_str}.md"
 
-    # Write the Markdown report
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(f"# Morning Dispatch — {today_str}\n\n")
         f.write(content)
